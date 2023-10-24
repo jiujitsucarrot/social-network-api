@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/social_ne
 });
 
 // Define Mongoose models 
-const { User, Thought, Reaction } = require('./models');
+const { User, Thought, Reaction } = require('../models');
 
 // Define Routes
 const usersRoutes = require('./routes/api/users');
