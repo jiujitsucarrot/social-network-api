@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
-const { User, Thought } = require('../models');
+const User = require('../models/User');
+const Thought = require('../models/Thought');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social_network_db', {
+mongoose.connect('mongodb://localhost/social_network_db', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     
