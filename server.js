@@ -13,7 +13,7 @@ app.use(express.urlencoded({ extended: true }));
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social_network_db', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    
+
 });
 
 mongoose.connection.on('error', (err) => {
@@ -39,5 +39,5 @@ app.use('/api/reactions', reactionsRoutes);
 
 // Start server
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
