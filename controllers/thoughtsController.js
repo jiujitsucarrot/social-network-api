@@ -1,4 +1,4 @@
-const { Thought, User } = require('../models/thought');
+const { Thought, User } = require('../models/Thought');
 
 const thoughtsController = {
     getAllThoughts: async (req, res) => {
@@ -30,7 +30,7 @@ const thoughtsController = {
             await User.findByIdAndUpdate(thoughtData.username, { $push: { thoughts: thought._id } });
             res.status(201).json(thought);
         } catch (err) {
-            res.status(400).json(err);
+            res.status(500).json(err);
         }
     },
 
@@ -44,7 +44,7 @@ const thoughtsController = {
             }
             res.json(thought);
         } catch (err) {
-            res.status(400).json(err);
+            res.status(500).json(err);
         }
     },
 

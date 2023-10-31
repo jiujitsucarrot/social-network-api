@@ -1,4 +1,4 @@
-const { Thought } = require('../models/thought');
+const { Thought } = require('../models/Thought');
 
 const reactionsController = {
     createReaction: async (req, res) => {
@@ -16,7 +16,7 @@ const reactionsController = {
 
             res.status(201).json(thought.reactions[thought.reactions.length - 1]);
         } catch (err) {
-            res.status(400).json(err);
+            res.status(500).json(err);
         }
     },
 
@@ -34,7 +34,7 @@ const reactionsController = {
             }
             res.json({ message: 'Reaction deleted' });
         } catch (err) {
-            res.status(400).json(err);
+            res.status(500).json(err);
         }
     },
 };

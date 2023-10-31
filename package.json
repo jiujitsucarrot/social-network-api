@@ -1,6 +1,6 @@
 {
     "name": "social-network-api",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "API for a social network web application using Express, MongoDB, and Mongoose.",
     "main": "server.js",
     "scripts": {
@@ -14,9 +14,7 @@
         "mongoose": "7.6.3"
     },
     "devDependencies": {
-        "chai": "^4.3.10",
-        "dotenv": "^16.3.1",
-        "eslint": "^8.52.0",
-        "mocha": "^10.2.0"
+        "nodemon": "3.0.1",
+        "dotenv": "16.3.1"
     }
 }

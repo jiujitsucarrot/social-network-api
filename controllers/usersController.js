@@ -1,4 +1,4 @@
-const { User } = require('../models/user');
+const { User } = require('../models/User');
 
 const usersController = {
     getAllUsers: async (req, res) => {
@@ -29,7 +29,7 @@ const usersController = {
             const user = await User.create(userData);
             res.status(201).json(user);
         } catch (err) {
-            res.status(400).json(err);
+            res.status(500).json(err);
         }
     },
 
@@ -43,7 +43,7 @@ const usersController = {
             }
             res.json(user);
         } catch (err) {
-            res.status(400).json(err);
+            res.status(500).json(err);
         }
     },
 
@@ -70,7 +70,7 @@ const usersController = {
             }
             res.json(user);
         } catch (err) {
-            res.status(400).json(err);
+            res.status(500).json(err);
         }
     },
 
@@ -84,7 +84,7 @@ const usersController = {
             }
             res.json(user);
         } catch (err) {
-            res.status(400).json(err);
+            res.status(500).json(err);
         }
     },
 };
