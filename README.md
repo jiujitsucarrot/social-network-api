@@ -36,7 +36,7 @@ This challenge has been giving me a problem or two. I am still currently debuggi
 
 ## Links
 
-* 
+* https://www.youtube.com/watch?v=Xus_-KLocmU
 * https://github.com/jiujitsucarrot/social-network-api
 
 ## Deliverables: 10%
